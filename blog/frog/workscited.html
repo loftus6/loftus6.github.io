@@ -3,18 +3,16 @@
 
 <head>
     <link rel="stylesheet" href="/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script> 
+        $(function(){
+          $("#sidenav").load("/template/sidenav.html"); 
+        });
+        </script> 
 </head>
 
-
-    <div class="sidenav">
-    <!-- <img src="https://www.marshall.edu/brandguide/files/2021/05/mu-primary-logo.png" width="130px"> -->
-    <a style="color:green;" align="center">Neil Loftus</a>
-    <a href="/index.html">Home</a>
-    <a href="/research.html">Research</a>
-    <a href="/blog/home.html">Blog</a>
-    </div>
-
-    <div class="content">
+    <div id="sidenav"></div>
 
 
         <a href="/blog/frog/5.html">Previous Page</a>  <a href="/blog/home.html">Next Page</a>
