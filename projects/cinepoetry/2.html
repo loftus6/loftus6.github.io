@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script> 
+        $(function(){
+          $("#sidenav").load("/template/sidenav.html"); 
+        });
+        </script> 
+</head>
+
+<body>
+    <div id="sidenav"></div>
+
+    <div class="content">
+
+
+        <a href="/blog/frog/2.html">Previous Page</a> Page 3 <a href="/blog/frog/4.html">Next Page</a>
+
+        <h2>Explaining StyleGAN</h2>
+        
+        <p>
+            A large portion of these AI generators are built upon the StyleGAN architecture. 
+            The main innovation of StyleGAN in layman’s terms is the use of “style” formulas, 
+            which transform the input data. These styles are independent of the input image and can be custom manipulated 
+            to produce fine-tuned results. 
+ <iframe width="80%" height="auto" class="wrapimg" src="https://www.youtube.com/embed/Sp4QqZRrb5Y?si=9H1amT0TWey261zf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  
+            This also allows for mixing of styles, as demonstrated in the figure below. 
+            This style mixing capability is the secret ingredient of thispersondoesnotexist.com. 
+            By combining a large number of facial and stylistic features, StyleGAN produces a 
+            countless stream of unique faces, which are possessed by no one else, real or fake. 
+             <br>
+             <br>
+
+            As mentioned previously, StyleGAN is not limited to just faces. 
+            Karras’s <a href="https://arxiv.org/pdf/1812.04948.pdf">paper introducing StyleGAN</a> demonstrates successful results 
+            for cats, cars, and hotel rooms. I originally set out to reproduce StyleGAN 
+            exactly, but I quickly realized that my computer was not nearly powerful 
+            enough to run it. As such, I pivoted to use a smaller network as a proof 
+            of concept, <a href="https://github.com/lucidrains/lightweight-gan">lightweightGAN</a>. 
+        </p>
+
+    </div>
+</body>
+
+</html>
